@@ -14,7 +14,7 @@ package com.example;
         @Override
         // FUNCION DESCRIBIR
         public void describir() {
-            System.out.println("Administrativo ID: " + id + ", Nombre: " + nombre + ", Email: " + email);
+            System.out.println("Supervisor ID: " + id + ", Nombre: " + nombre + ", Email: " + email);
         }
        @Override
     // FUNCION CALCULARSALARIO

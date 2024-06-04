@@ -31,7 +31,7 @@ public class Main {
         int n = scanner.nextInt();
 
         for (int i = 0; i < n; i++) {
-            System.out.println("Ingrese el tipo de empleado (1: Gerente, 2: Ingeniero, 3: Administrativo, 4: Sypervisor): ");
+            System.out.println("Ingrese el tipo de empleado (1: Gerente, 2: Ingeniero, 3: Administrativo, 4: Supervisor, 5: Ejecutivo) ");
             int tipo = scanner.nextInt();
 
             System.out.print("Ingrese el ID: ");
@@ -70,6 +70,15 @@ public class Main {
                     System.out.print("Ingrese precio de los extras: ");
                     double extras = scanner.nextDouble();
                     test.agregarEmpleado(new Supervisor(id, nombre, email , salarioAnual , extras));
+                    break;
+                 case 5:
+                    System.out.print("Ingrese el salarioHorasTrabajadas: ");
+                    int salarioHorasTrabajadas = scanner.nextInt();
+                    System.out.print("Ingrese precio de los Extras: ");
+                    double Extras = scanner.nextDouble();
+                    System.out.print("Ingrese precio de los pagasFestivos: ");
+                    double pagasFestivos = scanner.nextDouble();
+                    test.agregarEmpleado(new Ejecutivo(id, nombre, email , salarioHorasTrabajadas , Extras,pagasFestivos));
                     break;
                 
                 default:

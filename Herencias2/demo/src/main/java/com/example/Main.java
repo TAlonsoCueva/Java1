@@ -31,7 +31,7 @@ public class Main {
         int n = scanner.nextInt();
 
         for (int i = 0; i < n; i++) {
-            System.out.println("Ingrese el tipo de empleado (1: Gerente, 2: Ingeniero, 3: Administrativo): ");
+            System.out.println("Ingrese el tipo de empleado (1: Gerente, 2: Ingeniero, 3: Administrativo, 4: Sypervisor): ");
             int tipo = scanner.nextInt();
 
             System.out.print("Ingrese el ID: ");
@@ -64,6 +64,14 @@ public class Main {
                     double sueldoPorHoraAdm = scanner.nextDouble();
                     test.agregarEmpleado(new Administrativo(id, nombre, email , horasTrabajadasAdm , sueldoPorHoraAdm));
                     break;
+                case 4:
+                    System.out.print("Ingrese el salarioAnual: ");
+                    int salarioAnual = scanner.nextInt();
+                    System.out.print("Ingrese precio de los extras: ");
+                    double extras = scanner.nextDouble();
+                    test.agregarEmpleado(new Supervisor(id, nombre, email , salarioAnual , extras));
+                    break;
+                
                 default:
                     System.out.println("Tipo de empleado no válido.");
                     i--; // Decrementar para repetir la entrada de este empleado

@@ -2,22 +2,46 @@
 <html lang="es">
  <head>
     <link rel="stylesheet" href="example/index.css">
+    <link rel="stylesheet" href="example/index.js">
     <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width,
      initial-scale=5.0">
      <meta name="pokemon" content="all types">
     <title>Mi libro luna de pluton</title>
+    <title>Botón JS</title>
+    <style>
+        #mienlace {
+            color: #fff;
+            background-color: lightblue;
+            padding: 1rem;
+            border: 1px solid lightblue;
+            transition: 0.3s ease all;
+            display: flex;
+            justify-content: center;
+            margin: 1rem;
+            width: 10rem;
+        }
+        #mienlace:hover {
+            color: lightblue;
+            background-color: #fff;
+        }
+    </style>
 <head>
     <body>
         <h1>Bienvenido a mi increible página web</h1>
-        <footer>
-        <p>Autor: Sax guy.<br>
+        <script src="=script.js"></script>
+        <script>
+            var newButton = document.createElement("button");
+            newButton.innerHTML = "HTML Masters";
+            document.body.appendChild(newButton);
+        </script>
+        <footer>    
+        <p>Autor: SAX GUY.<br>
         <a href="https://www.youtube.com/watch?v=cBT2Oew5MLs">Visita mi enlace</a>
-        <p>Autor: Willy rex.<br>
+        <p>Autor: WILLY REX.<br>
         <a href="https://www.youtube.com/watch?v=wI-PUrnunsg">Visita mi enlace</a>
         <h2>La velada del año 7</h2>
-        <a href="https://www.youtube.com/watch?v=eAv5k1_xF70">Visita mi enlace</a>
-
+        <a href="https://www.youtube.com/watch?v=eAv5k1_xF70">Entra y veras</a>
         <footer>
             <img id="imagen1" src="http://gazettereview.com/wp-content/uploads/2015/04/Marvel.jpg">
             <img id ="imagen2" src="https://s1.elespanol.com/2016/01/18/ciencia/ciencia_95500599_450100_1706x1280.jpg">

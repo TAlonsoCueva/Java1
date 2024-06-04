@@ -1,14 +1,28 @@
 img
 {
-    width: 1500;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+   margin-left: 0%;
 }
 body{
-    background-image: url("https://miro.medium.com/v2/resize:fit:2000/1*9fAwL_e64YXaEd8zPExMfw.jpeg")
+    background-image: url("https://miro.medium.com/v2/resize:fit:2000/1*9fAwL_e64YXaEd8zPExMfw.jpeg");
+    margin-left: 50%;
 }
 p{
+    
     color: white;
+    
 }
 a{
+   scale: 15;
     color: aqua;
+}
+h1{
+    margin-left: -30%;
+    color: aqua;
+    
+}
+title
+{
+  color: antiquewhite;
 }

@@ -10,13 +10,16 @@ class Ingeniero extends Empleado {
         this.sueldoPorHora = sueldoPorHora;
     }
 
-    
-    public void describir() {
+    @Override
+    public void describir() 
+    {
         System.out.println("Ingeniero ID: " + id + ", Nombre: " + nombre + ", Email: " + email);
+
     }
 
-    
-    public double calcularSalario() {
+    @Override
+    public double calcularSalario() 
+    {
         return horasTrabajadas * sueldoPorHora;
     }
 }
